@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PADAWAN TEST - HOME</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css" rel="stylesheet" />
+
+<!-- Skeletons -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+
+<!-- First/SecondTest -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+
+<!-- For Second Test -->
+<link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css" />
+  <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+<div class="main mt-5 mx-5 px-5"align="center">
+<h1 class="sds" style="color: #024DA3">APPRENTICESHIP<br>'Padawan Test'</h1>
+<br>
+</div>
+<div class="main mt-5 mx-5 px-5"align="left">
+<h1 class="sds" style="color: #024DA3">a. The First Test</h1>
+<hr><br>
+</div>
+
+<div>
+
+<div class="new mx-5 px-5"align="left">
+	<div class="new mx-3 px-3">
+	<h3>DATA INPUT</h3>
+	<h6 > 1. Selection of a shapefile <i>(.shp)</i>  or  compressed file <i>(.zip)</i> here:</h6>
+<!-- 	<form action="/action_page.php"><br>
+	<label class="newer pl-5" for="myfile">Browse file/s:
+	<input type="file" id="myfile" name="myfile" multiple accept=".zip,.rar,.7zip,.shp">
+	<button type="submit" class="btn btn-primary">Press to continue</button>
+	</label>
+	</form> -->
+	<div>
+	<h3><br>DATA PROCESSING</h3>
+	<h6> 2. Auto-parsing and data transformation into GeoJSON.</h6>
+	</div>
+	<div>
+		<h3><br>DATA OUTPUT</h3>
+		<h6> 3. The vector data on a map shown <i>using a Leaflet mapping library:</i><br><br></h6>
+		 <div id="mapsecond" class=" jumbotron vertical-center container align-middle text-center" style="background-color:	#000033 ; color: #ffffff; height: 400px; width:600px; margin-top:30px; padding-top:170px ">Path: To view please go to the link below: <br> <i>https://canonminds.github.io/PT_PARSETOGEOJSON/ </i>  </div>
+		 <h6 class="text-center">Inspired by: <i>https://github.com/gipong/shp2geojson.js?files=1 <br>and http://github.com/wavded/js-shapefile-to-geojson</i></h6>
+	</div>
+</div>
+</div>
+
+<div>
+<div class="main mt-5 mx-5 px-5" align="left">
+	<h1 class="sds" style="color: #024DA3"><br><br>b. The Second Test</h1>
+	<hr><br>
+	</div>
+	<div class="new mx-5 px-5"align="center">
+		<h2 class="text-dark">HOUSEHOLD PERCENTAGES</h2>
+		<h5> Metro Manila cities that use Bottled Water </i></h5>
+		<h6><br><i>Source of Water Supply for Drinking</i></h6>
+		<div id="mapsecond" class=" jumbotron vertical-center container align-middle text-center" style="background-color:	#000033 ; color: #ffffff; height: 400px; width:600px; margin-top:30px; padding-top:170px ">Path: To view please go to the link below: <br> <i>https://canonminds.github.io/PT_SIMPLEWEBMAP/ </i>  </div>
+ 		<h6>Reference: <i>https://psa.gov.ph/content/housing-characteristics-philippines-results-2015-census-population</i></h6>
+	</div>
+</div>
+
+
+<div class="main mt-5 mx-5 px-5"align="left">
+
+<h1 class="sds" style="color: #024DA3"><br><br>c. The Third Test</h1>
+</div><hr><br><br>
+	<div class="new mx-5 px-5"align="center">
+		<h2 class="text-dark">MAP CREATION</h2>
+		<h5> <i>Creation of a map about the Taal volcano eruption/hazard using QGIS. </i></h5>
+		<h5> <br> Geopackage link: https://github.com/CanonMinds/PT-GEOPACKAGE-QGIS/tree/master/GeoPackage_Taal</h5>
+	</div>
+	<div class=" jumbotron vertical-center container align-middle text-center">
+	<img src="./map.png" alt="Madp.png" height="776" width="600">
+	<div>
+	<h6><br> Reference: <i>https://phillidar-dad.github.io/taal-open-lidar.html</i></h6>
+
+
+<script>
+
+	// var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+	// L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	// 	maxZoom: 18,
+	// 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+	// 		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+	// 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	// 	id: 'mapbox/streets-v11',
+	// 	tileSize: 512,
+	// 	zoomOffset: -1
+	// }).addTo(mymap);
+
+// Marker
+	// var marker1 = L.marker([51.5, -0.09]).addTo(mymap);
+	// marker1.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+// PopUp
+	// var popup = L.popup();
+
+	// 	function onMapClick(e) {
+	// 	    popup
+	// 	        .setLatLng(e.latlng)
+	// 	        .setContent("You clicked the map at " + e.latlng.toString())
+	// 	        .openOn(mymap);
+	// 	}
+
+	// 	mymap.on('click', onMapClick);
+</script>
+<script>
+
+<!-- 	// coorsLayer.bindTooltip(label, {permanent: true, className: "my-label", offset: [0, 0] }).openTooltip();
+
+	// coorsLayer.addData(data);
+	// map.addLayer(coorsLayer);
+		
+
+	// var coorsLayer = L.geoJSON(data, {
+
+
+	// 	pointToLayer: function (feature, latlng) {
+	// 		label = String(feature.properties.BOTTLEDWAT) + " "+ String(feature.properties.NAME_2)
+	// 		return L.marker(latlng, {icon: baseballIcon});
+	// 	},
+
+	// 	onEachFeature: onEachFeature
+
+	// }).addTo(map);
+
+	// coorsLayer.bindTooltip(label, {permanent: true, className: "my-label", offset: [0, 0] }).openTooltip();
+
+	// coorsLayer.addData(coorsField);
+	// map.addLayer(coorsLayer);	 -->
+</script> 
+<!-- <script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiY2Fub25taW5kcyIsImEiOiJjazZ6MDhsbm8wd2l5M2VydnlhNnMzNjd2In0.fHuV1kBL3phDqN7ME7fyFg';
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+</script>
+ -->
+
+<script src="./path/to/dropzone.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
